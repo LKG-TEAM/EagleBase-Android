@@ -1,0 +1,5 @@
+## 项目app的入口规定
+我们规定应用首页分带Tab(tab中间带加号与不带加号)、带侧滑Menu、单页(Single)几种。对应的入口类分别是BaseTabActivity的子类MainTabActivity、BaseMenuActivity的子类MainMenuActivity、ModuleContainer。
+	
+## 各个业务模块的入口规定
+我们规定所有业务模块的首页必须是NativeModule或WebModule的子类，装载进ModuleContainer。业务模块首页由平台自动生成，比如我们业务模块名称是EagleGesturePassword，那么它的首页是EagleGesturePasswordNativeModule。
