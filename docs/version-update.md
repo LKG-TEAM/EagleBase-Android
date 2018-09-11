@@ -1,7 +1,7 @@
 # 如何使用版本更新
 - 在移动平台上设置如下格式的json，其中versionUpdate和updateUrl是规定的必传参数，必须有这两个参数才能进行版本更新。其他字段是根据后台需要传的参数自己定义的。比如下面的json具体就是，后台接口名称为app/version，此处如果不写baseUrl就会使用app的baseUrl，请求contentType和请求方式(POST/GET)跟updateUrl同级别，最好写上，如果不写就默认是application/json和POST，参数是用户自己定义的key，这里我们写的key是"params"，里面的"os"和"v"是后台需要传的参数。
 
-	```java
+	```json
 	{
   	"versionUpdate":{
     "updateUrl":"app/version",

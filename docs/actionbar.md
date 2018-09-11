@@ -1,21 +1,23 @@
 # ActionBar设置
 主要功能集中在ActionBarUtil这个类，在BaseActivity进行了调用。
 ## 设置显示或隐藏ActionBar
-在activity里
+- 在activity里调用如下方法:
+
 	```java
- 	showActionBar();
+	showActionBar();
 	hideActionBar();
 	```
      
 ## 设置title
-如下方法，重写了多个方法，可以传参数字符串、resouceId、点击监听器、颜色、字体大小等。
+- 如下方法，重写了多个方法，可以传参数字符串、resouceId、点击监听器、颜色、字体大小等。
 
 	```java
 	setTitle();	
 	```
 
 ## 设置返回按钮
-	
+- 通过`setBackIcon`方法，传入点击事件，或者null。
+
 	```java
 	setBackIcon(new View.OnClickListener() {
           @Override
@@ -27,7 +29,7 @@
 	```
 
 ## 设置Actionbar颜色
-
+- 通过`setActionbarBackground`方法。
 	```java
 	 setActionbarBackground();	
 	```
