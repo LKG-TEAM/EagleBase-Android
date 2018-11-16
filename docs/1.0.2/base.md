@@ -152,10 +152,10 @@ EagleBridge.removeOptionMenu();
 
 ## 获取应用信息
 
-可以通过`getApplicationInfo`方法来实现。
+可以通过`getAppInfo`方法来实现。
 
 ```javascript
-EagleBridge.getApplicationInfo({
+EagleBridge.getAppInfo({
     success: function(resp){
     }
 });
@@ -164,6 +164,21 @@ EagleBridge.getApplicationInfo({
 ### 参数
 
 - success:     `Function`| `选填` 回调函数。接收应用信息。
+
+### 响应
+
+- resp:        `Object` 返回值。
+
+```json
+{
+   appId:           "应用id  安卓报名",
+   appName:         "应用名称",
+   appVersion:      "应用版本",
+   statuBarHeight:  "状态栏高度",
+   isDebug:         "是否是debug环境"
+}
+```
+
 
 
 ## 获取系统信息
@@ -180,6 +195,19 @@ EagleBridge.getSystemInfo({
 ### 参数
 
 - success:     `Function`| `选填` 回调函数。接收系统信息。
+
+### 响应
+
+- resp:        `Object` 返回值。
+
+```json
+{
+   deviceId:        "设备id"
+   systemName:      "系统名称"
+   systemVersion:   "系统版本"
+   systemLanguage:  "系统语言"
+}
+```
 
 
 
